@@ -1,0 +1,61 @@
+---
+controller_templates:
+  - name: Debug Playbook Dev
+    organization: Demo Org
+    project: Demo App
+    playbook: debug.yml
+    inventory: My Inventory Dev
+    credentials:
+      - Demo App Windows Dev
+    survey_enabled: yes
+    survey:
+      name: ""
+      description: ""
+      spec:
+        - question_name: Debug message
+          required: yes
+          type: text
+          variable: msg
+          min: 0
+          max: 1024
+          default: hello from dev
+
+  - name: Debug Playbook QA
+    organization: Demo Org
+    project: Demo App
+    playbook: debug.yml
+    inventory: My Inventory QA
+    credentials:
+      - Demo App Windows QA
+    survey_enabled: yes
+    survey:
+      name: ""
+      description: ""
+      spec:
+        - question_name: Debug message
+          required: yes
+          type: text
+          variable: msg
+          min: 0
+          max: 1024
+          default: hello from QA
+
+  - name: Debug Playbook Prod
+    organization: Demo Org
+    project: Demo App
+    playbook: debug.yml
+    inventory: My Inventory Prod
+    credentials:
+      - Demo App Windows Prod
+    survey_enabled: yes
+    survey:
+      name: ""
+      description: ""
+      spec:
+        - question_name: Debug message
+          required: yes
+          type: text
+          variable: msg
+          min: 0
+          max: 1024
+          default: hello from Prod

@@ -1,0 +1,21 @@
+---
+controller_templates:
+  - name: Debug Playbook Lab
+    organization: Demo Org
+    project: Demo App
+    playbook: debug.yml
+    inventory: My Inventory Lab
+    credentials:
+      - Demo App Windows Lab
+    survey_enabled: yes
+    survey:
+      name: ""
+      description: ""
+      spec:
+        - question_name: Debug message
+          required: yes
+          type: text
+          variable: msg
+          min: 0
+          max: 1024
+          default: hello from Lab

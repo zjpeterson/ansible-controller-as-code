@@ -1,0 +1,9 @@
+[controller_dev]
+aap-dev.example.com
+
+[controller_prod]
+aap-prod.example.com
+
+[controller:children]
+controller_dev
+controller_prod

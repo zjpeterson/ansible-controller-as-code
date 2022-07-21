@@ -1,0 +1,34 @@
+---
+- name: Configure Controller in environment {{ controller_env }}
+  hosts: controller_{{ controller_env }}
+  connection: local
+  gather_facts: no
+
+  collections:
+    - ansible.controller
+    - redhat_cop.controller_configuration
+
+  vars:
+    controller_hostname: "{{ ansible_host }}"
+
+  tasks:
+    - include_role:
+        name: redhat_cop.controller_configuration.organizations
+
+    - include_role:
+        name: redhat_cop.controller_configuration.projects
+
+    - include_role:
+        name: redhat_cop.controller_configuration.inventories
+
+    - include_role:
+        name: redhat_cop.controller_configuration.inventory_sources
+
+    - include_role:
+        name: redhat_cop.controller_configuration.credential_types
+
+    - include_role:
+        name: redhat_cop.controller_configuration.credentials
+
+    - include_role:
+        name: redhat_cop.controller_configuration.job_templates

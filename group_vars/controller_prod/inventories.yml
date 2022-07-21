@@ -1,0 +1,16 @@
+---
+controller_inventories:
+  - name: My Inventory Dev
+    organization: Demo Org
+    variables:
+      ansible_connection: local
+
+  - name: My Inventory QA
+    organization: Demo Org
+    variables:
+      ansible_connection: local
+
+  - name: My Inventory Prod
+    organization: Demo Org
+    variables:
+      ansible_connection: local

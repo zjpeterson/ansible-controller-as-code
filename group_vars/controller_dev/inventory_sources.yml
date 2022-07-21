@@ -1,0 +1,10 @@
+---
+controller_inventory_sources:
+  - name: demo_app_inventory_lab
+    inventory: My Inventory Lab
+    organization: Demo Org
+    source: scm
+    source_path: inventory_lab
+    source_project: Demo App
+    overwrite: yes
+    overwrite_vars: yes

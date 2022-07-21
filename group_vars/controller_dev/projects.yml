@@ -1,0 +1,8 @@
+---
+controller_projects:
+  - name: Demo App
+    organization: Demo Org
+    scm_type: git
+    scm_url: https://github.com/zjpeterson/test-playbooks.git
+    scm_branch: master
+    wait: yes

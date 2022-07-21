@@ -1,0 +1,6 @@
+---
+controller_inventories:
+  - name: My Inventory Lab
+    organization: Demo Org
+    variables:
+      ansible_connection: local

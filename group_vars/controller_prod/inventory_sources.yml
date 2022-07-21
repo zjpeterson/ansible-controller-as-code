@@ -1,0 +1,28 @@
+---
+controller_inventory_sources:
+  - name: demo_app_inventory_dev
+    inventory: My Inventory Dev
+    organization: Demo Org
+    source: scm
+    source_path: inventory_dev
+    source_project: Demo App
+    overwrite: yes
+    overwrite_vars: yes
+
+  - name: demo_app_inventory_qa
+    inventory: My Inventory QA
+    organization: Demo Org
+    source_path: inventory_qa
+    source: scm
+    source_project: Demo App
+    overwrite: yes
+    overwrite_vars: yes
+
+  - name: demo_app_inventory_prod
+    inventory: My Inventory Prod
+    organization: Demo Org
+    source: scm
+    source_path: inventory_prod
+    source_project: Demo App
+    overwrite: yes
+    overwrite_vars: yes
